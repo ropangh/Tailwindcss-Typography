@@ -1,4 +1,4 @@
-# Fix your content typography with typography-fix
+# Fix your content typography with tailwindcss
 
 This will faster the process to make a theme with proper typography for any HTML templates, Ghost Themes, Jekyll Themes, WordPress Theme etc.
 
@@ -8,7 +8,7 @@ Typography-fix will work if you add the class 'typofix' in your content markup. 
 Example :
 
 ```
-<div class="entry-content typofix">
+<div class="entry-content">
 	<p>Here is my content need to fix</p>
 	<blockquote>
 	   <p>Stay hungry. Stay foolish.</p>
