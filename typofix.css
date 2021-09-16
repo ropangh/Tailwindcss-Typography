@@ -1,0 +1,378 @@
+      
+/*
+Project     : TailwindCss Entry Content Style
+Git URL     : https://github.com/ropangh/Tailwindcss-Typography
+License     : GPL v2.0
+Last updated: 2021-09-16
+Author      : Ropan
+*/
+.entry-content {
+	--link-color:blue;  
+	--figcaption-align: center; 
+	--figcaption-color: silver; 
+	--table-border-color: LightGrey;  
+	--blockquote-bg: white; 
+	--blockquote-border-width: 1px;   
+	--blockquote-border-style: solid; 
+	--blockquote-border-radius: 0; 
+	--blockquote-font-family: "Times New Roman", Times, serif;
+	--blockquote-font-color: gray;
+	--blockquote-font-style: normal;
+	--blockquote-font-weight: 700; 
+	--blockquote-px: 24px;
+	--blockquote-py: 15px;
+	--base-font-size: 16px;
+	--text-font-family: Arial, Helvetica, sans-serif;
+	--text-font-color: gray;
+	--text-font-weight: 400;
+	--text-line-height: 1.6;
+	--heading-font-family: "Times New Roman", Times, serif;
+	--heading-font-color: black; 
+	--heading-font-weight: 700; 
+	--heading-line-height: 1.3;
+	--medium-max-width: 1096px;  
+	--spacing-size: 16px;  
+}  
+
+/*
+  Reset .entry-content element styles to avoid unwanted inheritance
+*/
+.entry-content{
+	font-family: var(--text-font-family);
+	line-height: var(--text-line-height);
+	font-weight: var(--text-font-weight);
+	color: var(--text-font-color);
+}
+/*
+  Block-level elements
+*/
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	font-family: var(--heading-font-family);
+	font-weight: var(--heading-font-weight);
+	line-height: var(--base-line-height);
+	color: var(--heading-font-color); 
+}
+.entry-content h1 {
+	font-size: calc(var(--base-font-size) * 2.75);
+}
+
+.entry-content h2 {
+	font-size: calc(var(--base-font-size) * 2.25);
+}
+
+.entry-content h3 {
+	font-size: calc(var(--base-font-size) * 1.5);
+}
+
+.entry-content h4 {
+	font-size: calc(var(--base-font-size) * 1.25);
+}
+
+.entry-content h5 {
+	font-size: calc(var(--base-font-size) * 1);
+}
+.entry-content h6 {
+	font-size: calc(var(--base-font-size) * 0.75);
+}
+
+/*
+  Initialize spacing 
+*/
+.entry-content figure,
+.entry-content figcaption,
+.entry-content iframe,
+.entry-content object,
+.entry-content iframe,
+.entry-content caption,
+.entry-content applet,
+.entry-content embed,
+.entry-content audio, 
+.entry-content video,
+.entry-content dl,
+.entry-content p,
+.entry-content hr,
+.entry-content pre,
+.entry-content table,
+.entry-content ol,
+.entry-content ul,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4, 
+.entry-content h5,
+.entry-content h6,
+.entry-content ul { 
+	margin-top: 0;
+	margin-bottom: var(--spacing-size);
+} 
+.entry-content table,
+.entry-content th,
+.entry-content td {
+	border: 1px solid; 
+	border-color: var(--table-border-color); 
+}
+/*
+  Image elements
+*/
+.entry-content .medium-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.entry-content .medium-image img{
+	max-width: var(--medium-max-width);
+	width: 100vw; 
+	display: block;  
+}
+.entry-content .fluid-image{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.entry-content .fluid-image img{
+	width: 100vw;
+	max-width: 100vw;
+}
+/*
+  Inline elements
+*/
+.entry-content blockquote {
+	background-color: var(--blockquote-bg);
+	border-left-width: var(--blockquote-border-width); 
+	border-left-style: var(--blockquote-border-style);
+	border-left-color: var(--link-color);
+	border-radius: var(--blockquote-border-radius);
+	font-family: var(--blockquote-font-family);
+	color: var(--blockquote-font-color); 
+	font-style: var(--blockquote-font-style);
+	font-weight: var(--blockquote-font-weight);
+	padding: var(--blockquote-py) var(--blockquote-px);
+	margin-bottom: var(--spacing-size); 
+}
+.entry-content blockquote cite,
+.entry-content blockquote cite a{
+	opacity: .8; 
+	text-decoration: none; 
+	color: var(--blockquote-font-color); 
+} 
+.entry-content code {
+	vertical-align: middle;
+	padding: .15em .4em;
+	color: var(--heading-font-color);
+	background: var(--table-border-color);
+} 
+.entry-content pre {
+	border-radius: var(--blockquote-border-radius);
+	display: block;
+	max-width: 100%; 
+	overflow: auto; 
+	padding: calc(1em - 1px) 1.5em;
+	white-space: pre-wrap;
+}
+.entry-content pre code{
+	padding: 0;
+	background: transparent; 
+}
+.entry-content a {
+	text-decoration: underline;
+	color: var(--link-color);
+}
+.entry-content b {
+	font-weight: bolder;
+}
+.entry-content strong {
+	font-weight: bold;
+}
+.entry-content u{
+	text-decoration: underline; 
+}
+.entry-content i {
+	font-style: italic;
+}
+.entry-content dfn {
+    font-style: italic;
+}
+.entry-content em {
+	font-style: italic; 
+	font-weight: bold;
+}
+
+.entry-content abbr[title] {
+	border-bottom: 1px dotted gray;
+}
+.entry-content cite {
+	font-style: italic;
+}
+.entry-content del {
+	color: red;
+	text-decoration: line-through;
+}
+
+.entry-content ins {
+	color: green;
+	text-decoration: none;
+}
+
+.entry-content kbd {
+	padding: .2rem .4rem;
+	font-size: .875em;
+	color: white;
+	background-color:black;
+	border-radius: 0;
+}
+
+.entry-content mark {
+	background-color: yellow
+}
+.entry-content small {
+	font-size: .75em;
+}
+
+.entry-content s {
+	text-decoration: line-through;
+}
+.entry-content sub {
+	font-size: 80%;
+	vertical-align: sub;
+}
+
+.entry-content sup {
+	font-size: .75em;
+	vertical-align: super;
+}
+
+.entry-content var {
+	font-style: italic;
+}
+.entry-content samp {
+    font-family: monospace; 
+}
+.entry-content hr {
+    border-color:var(--table-border-color); 
+}  
+.entry-content input[type="text"],
+.entry-content input[type="email"],
+.entry-content input[type="search"],
+.entry-content input[type="password"],
+.entry-content input[type="tel"],
+.entry-content input[type="url"],
+.entry-content input[type="image"], 
+.entry-content input[type="tel"],
+.entry-content input[type="date"],
+.entry-content input[type="time"],
+.entry-content input[type="datetime"],
+.entry-content input[type="datetime-local"],
+.entry-content input[type="month"],
+.entry-content input[type="week"],
+.entry-content select,
+.entry-content textarea { 
+    border: 1px solid var(--table-border-color); 
+	padding: .2em .75em;   
+}   
+.entry-content input[type="button"],
+.entry-content input[type="reset"],
+.entry-content input[type="submit"], 
+.entry-content input[type="reset"], 
+.entry-content input[type="radio"],  
+.entry-content button{  
+    background-color: lightgray; 
+    color: black;
+	padding: .2em .75em; 
+    border-width: 1px;   
+	border-radius: 2px;
+    border-style: outset;
+    border-color: silver;   
+}    
+
+/*
+  Lists
+*/
+.entry-content ol {
+	list-style: none; 
+	padding-left: 1rem;
+	counter-reset: item;
+}
+.entry-content ol li:before { 
+	content: counter(item) ". ";
+	counter-increment: item;
+	color: var(--link-color); 
+	margin-left: -1em;  
+}
+.entry-content ul { 
+	list-style: none;  
+	padding-left: 1rem; 
+}
+.entry-content ul li::before {  
+	content: "\2022";
+	color: var(--link-color);  
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em; 
+}
+.entry-content dl {
+	display: block;
+}
+.entry-content dt {
+	display: block;
+}
+.entry-content dd {
+    display: block;
+    margin-inline-start: 40px; 
+}
+/*
+  Tables
+*/
+.entry-content .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.entry-content table { 
+	/* border set above */
+	border-collapse: collapse;
+	/* margin set above */
+	table-layout: auto;
+}
+.entry-content caption {
+	caption-side: top;
+	font-weight: bold;
+	/* line-height set above */
+	/* margin set above */
+	margin-top: 0;
+}
+.entry-content thead *{ 
+	border-bottom-color: gray;
+}
+.entry-content thead *, 
+.entry-content th{ 
+	white-space: nowrap;  
+}
+.entry-content th,
+.entry-content td {
+	/* border set above */
+	/* color set above */
+	/* line-height set above */
+	padding: calc(.75em - .5px);  
+	text-align: center;
+}
+/*
+  Media
+*/
+.entry-content embed,
+.entry-content iframe,
+.entry-content figure img,
+.entry-content object {
+	display: inline-block;
+	max-width: 100%;
+}
+.entry-content figcaption {
+	font-size: .75em;
+	margin-top: 8px; 
+	text-align: var(--figcaption-align);
+	color: var(--figcaption-color);
+}
